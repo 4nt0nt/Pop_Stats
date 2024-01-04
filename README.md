@@ -24,3 +24,5 @@ Welcome to Pop_Stats, your go-to platform for exploring and rating different dat
 - *****Rate Databases:***** Share your opinions by giving ratings to different databases.
 - *****Explore Popularity:***** View popularity statistics for databases globally or within specific regions.
 - *****Personal Dashboard:***** Track your ratings and contributions in a personalized user dashboard.
+
+# Happy Exploring Databases with Pop_Stats! 🚀
