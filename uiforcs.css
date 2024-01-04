@@ -1,0 +1,462 @@
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url('bodywp3.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+
+.word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #118b4a;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+    32% {
+        color: var(--color-1)
+    }
+    33% {
+        color: var(--color-2)
+    }
+    65% {
+        color: var(--color-2)
+    }
+    66% {
+        color: var(--color-3)
+    }
+    99% {
+        color: var(--color-3)
+    }
+    100% {
+        color: var(--color-1)
+    }
+}
+
+.t1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    height: 2cm
+}
+
+.ti {
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.2cm;
+    text-transform: uppercase;
+}
+
+
+/*----------------*/
+
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.btnls {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(80, 79, 79);
+  color: rgb(255, 255, 255);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.login {
+  border-color: #04AA6D;
+  color: #04AA6D;
+}
+
+.login:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.signup {
+  border-color: #2196F3;
+  color: #2196F3;
+}
+
+.signup:hover {
+  background: #2196F3;
+  color: white;
+}
+
+.mySlides {
+  display: none;
+  opacity: 0.8;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 35%;
+  margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+      font-size: 11px
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  margin-top: -280px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  padding: 40px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10%;
+  text-align: center;
+  bottom: 40%;
+  left: 15%;
+}
+.button:hover{
+  background-color: #169d4a;
+}
+
+.button1 {
+  background-color: #000000;
+  color: white;
+  padding: 40px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10%;
+  text-align: center;
+  bottom: 40%;
+  right: 60%;
+}
+.button1:hover{
+  background-color: #a80fa1;
+}
+
+.button2 {
+  background-color: #000000;
+  color: white;
+  padding: 40px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10%;
+  text-align: center;
+  bottom: 40%;
+  right: 35%;
+}
+.button2:hover{
+  background-color: #df7912;
+}
+
+.button3 {
+  background-color: #000000;
+  color: white;
+  padding: 40px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10%;
+  text-align: center;
+  bottom: 40%;
+  right: 16%;
+}
+.button3:hover{
+  background-color: #1937c9;
+}
+
+.buttonw {
+  background-color: #00707c;
+  color: white;
+  padding: 50px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  bottom: 40%;
+  right: 16%;
+}
+.buttonw:hover{
+  background-color: #001269;
+}
+
+.but {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.but span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.but span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.but:hover span {
+  padding-right: 25px;
+}
+
+.but:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #208dfa;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}

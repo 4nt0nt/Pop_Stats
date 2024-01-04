@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Pop stats</title>
+  <link rel="icon" href="a.jpg">
+  </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<style>
+   h2 {
+    font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #144c06, #b393d3);
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+body {
+  background-image: url('worldmap.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.div1 {
+    height: 520px;
+    width:1200px ;
+    margin: 20px;
+    background-color: #EBEBEB;
+    }
+
+</style>
+<body>
+
+<center><h2>WORLD-WIDE Usercount</h2></center>
+
+<center>
+    <div class="div1">
+        <center><canvas id="myChart" style="width:100%;max-width:1000px"></canvas></center>
+    </div>
+</center>
+
+
+
+ <script>
+
+var xValues = ["Oracle", "MySQL", "Microsoft SQL Server", "PostgreSQL", "MongoDB","Redis","IBM Db2","ElasticSearch","Microsoft Access","SQLite"];
+var yValues = [55, 102, 44, 66, 87, 66, 55, 88, 78, 58];
+var barColors = ["red", "green","blue","orange","brown","yellow","blue","red", "green","orange"];
+
+
+new Chart("myChart", {
+  type: "horizontalBar",
+  data: {
+  labels: xValues,
+  datasets: [{
+    backgroundColor: barColors,
+    data: yValues
+  }]
+},
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Asian Region Usercount(in Millions)"
+    },
+    scales: {
+      xAxes: [{ticks: {min: 10, max:200}}]
+    }
+  }
+});
+ </script>
+
+</body>
+</html>

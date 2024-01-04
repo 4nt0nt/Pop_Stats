@@ -1,0 +1,100 @@
+<html>
+   <head> 
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+      <title>Pop stats</title>
+      <link rel="icon" href="a.jpg">
+   </head> 
+
+   <style>
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #559220, #b393d3);
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+body {
+  background-image: url('west.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.div1 {
+    /* height: 1700px; */
+    height:auto;
+    padding:40px;
+    margin-left: 100px; 
+    /*margin: 60px;*/
+    background-color: #b9a7a7;
+    border-radius: 30px;
+    
+}
+   </style>
+
+   <body> 
+
+    <center><h2>Western Region Usercount</h2></center>
+
+    <div class="div1">
+        <center>
+            <div id="dual_x_div" style="width:100%;max-width:1000px; height: 1500px;"></div>  
+        </center>
+    </div>
+
+
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawStuff);
+        function drawStuff() {//  w  ww .j  a  va2 s .com
+          var data = new google.visualization.arrayToDataTable([
+            ['', '2001-2005 ---    ', '2006-2010 ---  ','2011-2015 ---  ','2016-2020 --- ','Average '],
+            ['Oracle', 2000, 4000,4500,10000,20000],
+            ['MySql', 2400, 4000,4500,8000,18000],
+            ['Microsoft SQL Server', 3000, 6000,7000,6500,15000],
+            ['PostgreSQL', 500,1000,2000,5000,13000 ],
+            ['MongoDB', 1000, 2000,3000,4000,10000],
+            ['Redis', 1000, 2000,3000,4000,8000],
+            ['IBM Db2', 1000, 2000,3000,4000,6000],
+            ['ElasticSearch', 1000, 2000,3000,4000,4000],
+            ['Microsoft Access', 1000, 2000,3000,4000,3000],
+            ['SQLite', 1000, 2000,3000,4000,1000]
+          ]);
+          var options = {
+            width: 800,
+            chart: {
+              title: '------------------------------------------------------------',
+              subtitle: ''
+            },
+            bars: 'horizontal', 
+            series: {
+              0: { axis: '2001-2005 ' }, 
+              1: { axis: '2006-2010 ' },
+              2: {axis:  '2011-2015 ' },
+              3: {axis:  '2016-2020 ' },
+              4: {axis:  'Average ' },
+            },
+            axes: {
+              x: {
+                  a1: {label: 'User_count'}, 
+                  a2: {side: 'top', label: ''} 
+              }
+            }
+          };
+        var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+        chart.draw(data, options);
+      };
+      
+        </script> 
+
+   </body>
+</html>

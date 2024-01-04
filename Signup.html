@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN UP | POP STATS</title>
+    <link rel="icon" href="a.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -50px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: 20px;
+    bottom: -230px;
+}
+form{
+    height: 800px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 30px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display:inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 50px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 500px;
+  border-radius: 30px;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 200px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Sign Up With POP STATS</h3>
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name" id="" required>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username" id="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password" id="password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Re-enter Password" id="password" required>
+
+        <label>Date Of Birth</label>
+        <input type="date" required>
+
+        <label>Region</label>
+        <input type="text" placeholder="Country" required>
+
+        <button type="submit" formaction="Login.html" onclick="showAlert()">Sign Up</button>
+
+        <script>
+            function showAlert() {
+              var myText = "You successfully signed in......";
+              alert (myText);
+            }
+            </script>
+
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
