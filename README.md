@@ -16,3 +16,11 @@ Welcome to Pop_Stats, your go-to platform for exploring and rating different dat
 
 # Note:
 *The backend for this project (implemented using XAMPP and PHP) is not included in this repository. You may customize the backend according to your preferences and connect it to the frontend for a complete solution.*
+
+# Usage
+****Once the frontend is set up, you can use the platform to:****
+
+- Log in or Sign up: Create an account or log in with existing credentials.
+- Rate Databases: Share your opinions by giving ratings to different databases.
+- Explore Popularity: View popularity statistics for databases globally or within specific regions.
+- Personal Dashboard: Track your ratings and contributions in a personalized user dashboard.
