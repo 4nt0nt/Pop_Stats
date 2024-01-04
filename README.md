@@ -8,8 +8,11 @@ Welcome to Pop_Stats, your go-to platform for exploring and rating different dat
 ##### User Dashboard: A personalized dashboard for users to track their database ratings and contributions.
 
 # Getting Started
-To get started with Pop_Stats, follow these steps:
+#### To get started with Pop_Stats, follow these steps:
 
-#### 1] Clone the repository to your local machine.
-#### 2] Set up your web server (e.g., XAMPP) to host the frontend files.
-#### 3] Open the index.html file in your web browser.
+ 1] Clone the repository to your local machine.
+ 2] Set up your web server (e.g., XAMPP) to host the frontend files. 
+ 3] Open the index.html file in your web browser.
+
+# Note:
+*The backend for this project (implemented using XAMPP and PHP) is not included in this repository. You may customize the backend according to your preferences and connect it to the frontend for a complete solution.*
